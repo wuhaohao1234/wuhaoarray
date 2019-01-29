@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - "iojs"
+  - "10.8.0"
+env:
+  - EMBER_VERSION=default
+before_install:
+  - npm install -g typescript
+  - npm install --save -dev mocha chai
+before_script:
+  - npm run dev
+script:
+  - npm run test
