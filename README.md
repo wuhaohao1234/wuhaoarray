@@ -1,5 +1,5 @@
 # wuhaoarray
-  
+[str](!https://travis-ci.org/wuhaohao1234/travis-ci.svg?branch=master)
 ## 操作数组的一些方法 
 
 * everys
