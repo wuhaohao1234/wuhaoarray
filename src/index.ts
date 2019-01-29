@@ -75,8 +75,6 @@ function joins(arr: any) {
     }
     return str.substring(0, str.length - 1);  
 }
-
-
 // Array.entries
 class Ent {
     public arr:Array<any>

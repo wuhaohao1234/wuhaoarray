@@ -1,6 +1,6 @@
 {
   "name": "wuhaoarray",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "",
   "main": "./dist/index.js",
   "scripts": {
@@ -9,7 +9,10 @@
     "test": " mocha index.test.js",
     "start": "start index.html"
   },
-  "keywords": [],
+  "keywords": [
+    "Array",
+    "wuhao"
+  ],
   "author": "wuhaohao <1611499758@qq.com>",
   "license": "ISC",
   "dependencies": {},
