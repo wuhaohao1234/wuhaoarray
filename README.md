@@ -1,6 +1,6 @@
 # wuhaoarray
 
-![str](https://travis-ci.org/wuhaohao1234/wuhaoarray.svg?branch=master)
+[![Build Status](https://travis-ci.org/wuhaohao1234/wuhaoarray.svg?branch=master)](https://travis-ci.org/wuhaohao1234/wuhaoarray)
 
 ## 操作数组的一些方法 
 
