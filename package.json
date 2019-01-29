@@ -1,0 +1,16 @@
+{
+  "name": "wuhaoarray",
+  "version": "0.0.3",
+  "description": "* everys",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc test.ts"
+  },
+  "keywords": [
+    "wuhao",
+    "Array"
+  ],
+  "author": "wuhaohao <1611499758@qq.com>",
+  "license": "ISC"
+}
