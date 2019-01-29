@@ -1,7 +1,7 @@
 language: node_js
 node_js:
-  - "iojs"
   - "10.8.0"
+  - "iojs"
 env:
   - EMBER_VERSION=default
 before_install:
