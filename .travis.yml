@@ -6,6 +6,7 @@ env:
   - EMBER_VERSION=default
 before_install:
   - npm install -g typescript
+  - npm install -g tslint
   - npm install mocha chai --save
 before_script:
   - npm run lint
