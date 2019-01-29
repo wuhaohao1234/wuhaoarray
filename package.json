@@ -5,9 +5,11 @@
   "main": "./dist/index.js",
   "scripts": {
     "cnpm": "npm config set registry https://registry.npm.taobao.org",
-    "dev": "tsc",
+    "dev": "tsc -w",
+    "build": "tsc",
     "test": " mocha index.test.js",
-    "start": "start index.html"
+    "lint": "tslint tslint.json",
+    "release":"npm version minor"
   },
   "keywords": [
     "Array",
@@ -17,6 +19,7 @@
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
+    "typescript": "^3.3.1",
     "@types/node": "^10.12.19",
     "chai": "^4.2.0",
     "mocha": "^5.2.0"

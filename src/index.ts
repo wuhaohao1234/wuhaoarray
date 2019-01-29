@@ -2,11 +2,14 @@ interface callbacks {
     (arr:any):boolean
 }
 interface forEaCallbaack {
-    (key:any,index:number):void
+    (key:number,value:any):void;
+    
 }
-
+interface Entre {
+    next():object;
+}
 //Array.every
-function everys(arrs:any, callback: callbacks) {
+function everys(arrs:Array<any>, callback: callbacks):boolean {
     let arr = []
     for(var i = 0;i < arrs.length;i ++) {
         if (!callback(arrs[i])) {
@@ -16,7 +19,7 @@ function everys(arrs:any, callback: callbacks) {
         return true
     }
 //Array.some
-function somes(arrs: any, callback: callbacks) {
+function somes(arrs: Array<any>, callback: callbacks):boolean {
     let arr = []
     for (var i = 0; i < arrs.length; i++) {
         if (callback(arrs[i])) {
@@ -26,7 +29,7 @@ function somes(arrs: any, callback: callbacks) {
     return false
 }
 //Array.find
-function finds(arrs: any, callback: callbacks) {
+function finds(arrs: Array<any>, callback: callbacks):boolean {
     let arr = []
     for (var i = 0; i < arrs.length; i++) {
         if (callback(arrs[i])) {
@@ -36,7 +39,7 @@ function finds(arrs: any, callback: callbacks) {
     return false
 }
 //Array.map
-function maps(arr: any, callback: callbacks) {
+function maps(arr: Array<any>, callback: callbacks) {
     let newArr = []
     for(var i = 0;i < arr.length;i ++) {
         newArr.push(callback(arr[i])) 
@@ -44,7 +47,7 @@ function maps(arr: any, callback: callbacks) {
     return newArr
 }
 //Array.filter
-function filters(arr: any, callback: callbacks) {
+function filters(arr: Array<any>, callback: callbacks) {
     let newArr = []
     for (var i = 0; i < arr.length; i++) {
         if(callback(arr[i])) {
@@ -54,13 +57,13 @@ function filters(arr: any, callback: callbacks) {
     return newArr
 }
 //Array.forEach
-function forEachs(arr: any, callback: forEaCallbaack) {
+function forEachs(arr: Array<any>, callback: forEaCallbaack) {
     for(var i = 0;i <arr.length;i ++) {
         callback(i,arr[i])
     }
 }
 //Array.findIndex
-function findIndexs(arr: any, callback: callbacks) {
+function findIndexs(arr: Array<any>, callback: callbacks) {
     for(var i = 0;i < arr.length;i ++) {
         if (callback(arr[i])) {
             return i
@@ -68,7 +71,7 @@ function findIndexs(arr: any, callback: callbacks) {
     }
 }
 //Array.join
-function joins(arr: any) {
+function joins(arr: Array<any>) {
     let str = ''
     for(var i = 0;i < arr.length;i ++) {
         str += arr[i] + ','
@@ -76,7 +79,7 @@ function joins(arr: any) {
     return str.substring(0, str.length - 1);  
 }
 // Array.entries
-class Ent {
+class Ent implements Entre {
     public arr:Array<any>
     public value:any
     public done:boolean
