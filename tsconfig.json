@@ -1,0 +1,22 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "module": "es6",
+        "outDir": "./dist",
+        "sourceMap": true,
+        "target": "es6",
+        "removeComments": true,
+        "declaration": true,
+        "moduleResolution": "node",
+        "noImplicitAny": true,
+        "experimentalDecorators": true
+    },
+    "exclude": [
+        "dist",
+        "node_modules",
+        "**/*.spec.ts"
+    ],
+    "include": [
+        "src/**/*"
+    ]
+}
