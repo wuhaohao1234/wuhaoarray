@@ -20,7 +20,7 @@
 
 * entriess
 
-## demo
+## demo示例
 
 ```
 var arrs = [3, 5, 33, 40];
